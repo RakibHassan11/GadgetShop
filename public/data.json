@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Ultra Laptop Pro",
+    "product_image": "https://i.ibb.co.com/1XpBF7z/plant-near-laptop.jpg",
+    "category": "laptops",
+    "price": 1299,
+    "description": "A high-performance laptop with advanced features for professionals.",
+    "specification": ["16GB RAM", "512GB SSD", "Intel i7 processor"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 2,
+    "product_title": "Compact Laptop",
+    "product_image": "https://i.ibb.co.com/Mg9bHv4/still-life-books-versus-technology.jpg",
+    "category": "laptops",
+    "price": 899,
+    "description": "A lightweight laptop ideal for travel and everyday tasks.",
+    "specification": ["13-inch display", "256GB SSD", "8GB RAM"],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": 3,
+    "product_title": "Gaming Laptop Xtreme",
+    "product_image": "https://i.ibb.co.com/GRjCq03/mug-stationery-near-laptop-clouds.jpg",
+    "category": "laptops",
+    "price": 1599,
+    "description": "A gaming laptop with a powerful GPU and high-refresh display.",
+    "specification": ["16GB RAM", "1TB SSD", "NVIDIA GTX 3070", "144Hz display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 4,
+    "product_title": "Budget Laptop",
+    "product_image": "https://i.ibb.co.com/GRjCq03/mug-stationery-near-laptop-clouds.jpg",
+    "category": "laptops",
+    "price": 549,
+    "description": "An affordable laptop for everyday computing tasks.",
+    "specification": ["8GB RAM", "256GB SSD", "Intel i3 processor"],
+    "availability": true,
+    "rating": 4.1
+  },
+  {
+    "product_id": 5,
+    "product_title": "Business Laptop",
+    "product_image": "https://i.ibb.co.com/tXgm5Gt/laptop-wooden-table.jpg",
+    "category": "laptops",
+    "price": 1050,
+    "description": "A reliable laptop with enhanced security features for business use.",
+    "specification": ["16GB RAM", "512GB SSD", "Intel i5 processor"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 6,
+    "product_title": "Convertible Laptop",
+    "product_image": "https://i.ibb.co.com/Ln1KV2d/market-trends-concept-with-laptop.jpg",
+    "category": "laptops",
+    "price": 1200,
+    "description": "A 2-in-1 convertible laptop that switches between tablet and laptop modes.",
+    "specification": ["12GB RAM", "256GB SSD", "Touchscreen"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 7,
+    "product_title": "PIXEL 6",
+    "product_image": "https://i.ibb.co.com/M5Jgxwc/images.jpg",
+    "category": "phones",
+    "price": 799,
+    "description": "A powerful smartphone with an advanced camera system.",
+    "specification": ["6.5-inch display", "128GB storage", "12MP camera"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 8,
+    "product_title": "Tablet Pro",
+    "product_image": "https://i.ibb.co.com/6JPrCMt/tablet.jpg",
+    "category": "phones",
+    "price": 499,
+    "description": "A versatile tablet for entertainment and productivity.",
+    "specification": ["10.5-inch display", "64GB storage", "8MP camera"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 9,
+    "product_title": "Smartwatch Series 5",
+    "product_image": "https://i.ibb.co.com/8YcRnkv/freepik-expand-91815.png",
+    "category": "smart watches",
+    "price": 249,
+    "description": "A smartwatch with health and fitness tracking features.",
+    "specification": ["Heart rate monitor", "GPS", "Water-resistant"],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": 10,
+    "product_title": "Smartwatch Sport",
+    "product_image": "https://i.ibb.co.com/nrMJ3d2/freepik-upload-33954.jpg",
+    "category": "smart watches",
+    "price": 299,
+    "description": "A rugged smartwatch for outdoor activities.",
+    "specification": ["GPS", "Heart rate monitor", "Water-resistant up to 50m"],
+    "availability": true,
+    "rating": 4.6
+  }
+]
