@@ -26,11 +26,12 @@ const Home = () => {
       : data.filter((product) => product.category === category);
       
     const nextProducts = filteredProducts.slice(products.length, products.length + 6);
-    setProducts((prevProducts) => [...prevProducts, ...nextProducts]);
-    
-    if (products.length + nextProducts.length >= filteredProducts.length) {
-      setHasMore(false); // No more products to load
-    }
+    setProducts((prevProducts) => {
+      const updatedProducts = [...prevProducts, ...nextProducts];
+      // Check if there are more products to load
+      setHasMore(updatedProducts.length < filteredProducts.length);
+      return updatedProducts;
+    });
   };
 
   // Set up intersection observer for infinite scroll
@@ -73,7 +74,7 @@ const Home = () => {
         {/* Render product cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
-            <ProductCard key={product.product_id} product={product} />
+            <ProductCard key={`${product.category}-${product.product_id}`} product={product} />
           ))}
         </div>
 

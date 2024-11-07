@@ -12,27 +12,34 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product) => {
     if (!cartItems.find((item) => item.product_id === product.product_id)) {
-      setCartItems((prevItems) => [...prevItems, product]);
-      setTotalPrice((prevTotal) => prevTotal + product.price);
+      setCartItems((prevItems) => {
+        const updatedCartItems = [...prevItems, product];
+        const updatedTotalPrice = updatedCartItems.reduce((total, item) => total + item.price, 0);
+        setTotalPrice(updatedTotalPrice);
+        return updatedCartItems;
+      });
     }
   };
 
   const removeFromCart = (id) => {
-    const itemToRemove = cartItems.find((item) => item.product_id === id);
-    if (itemToRemove) {
-      setCartItems((prevItems) => prevItems.filter((item) => item.product_id !== id));
-      setTotalPrice((prevTotal) => prevTotal - itemToRemove.price);
-    }
+    setCartItems((prevItems) => {
+      const updatedItems = prevItems.filter((item) => item.product_id !== id);
+      const updatedTotalPrice = updatedItems.reduce((total, item) => total + item.price, 0);
+      setTotalPrice(updatedTotalPrice);
+      return updatedItems;
+    });
   };
 
   const sortCartByPrice = () => {
-    setCartItems((prevItems) =>
-      [...prevItems].sort((a, b) => b.price - a.price) // Sort in descending order
-    );
+    setCartItems((prevItems) => {
+      const sortedItems = [...prevItems].sort((a, b) => b.price - a.price);
+      const updatedTotalPrice = sortedItems.reduce((total, item) => total + item.price, 0);
+      setTotalPrice(updatedTotalPrice);
+      return sortedItems;
+    });
   };
 
   const handlePurchase = () => {
-    // Show the congratulatory modal and reset cart
     setIsModalOpen(true);
     setCartItems([]);
     setTotalPrice(0);

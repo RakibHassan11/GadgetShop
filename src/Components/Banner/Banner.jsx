@@ -4,8 +4,8 @@ import bannerImg from '../../assets/banner.jpg';
 const Banner = () => {
     return (
         <>
-            <div className="relative hero mx-auto rounded-2xl bg-cover bg-center bg-no-repeat">
-                <div className="hero-overlay bg-purple-600 rounded-2xl"></div>
+            <div className="relative hero mx-auto bg-cover bg-center bg-no-repeat ">
+                <div className="hero-overlay bg-purple-600 "></div>
                 <div className="hero-content text-neutral-content text-center px-6 py-12 md:py-20">
                     <div className="max-w-3xl mx-auto">
                         <h1 className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold text-white whitespace-nowrap">

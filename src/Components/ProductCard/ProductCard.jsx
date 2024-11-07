@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
         <h2 className="card-title">{product.product_title}</h2>
         <p>Price: ${product.price}</p>
         <p>Rating: {product.rating} ⭐</p>
-        <button onClick={handleDetails} className="btn btn-primary mt-4">Details</button>
+        <button onClick={handleDetails} className="btn text-purple-600 bg-white border-purple-600 rounded-3xl mt-4">View Details</button>
       </div>
     </div>
   );
