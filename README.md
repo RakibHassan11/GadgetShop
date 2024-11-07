@@ -5,11 +5,11 @@ Welcome to **GadgetHeaven**, an e-commerce platform where you can browse the lat
 ## Live Website Link
 
 You can check out the live website here:  
-[Live Website Link](https://rakib-dream-11.surge.sh/)
+[Live Website Link](https://gadgetparkrakib11.surge.sh/)
 
 ## Requirement Document Link
 
-[GitRepository](https://github.com/RakibHassan11/Dream-XI.git)
+[GitRepository](https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-RakibHassan11.git)
 
 ## React Fundamental Concepts Used
 
