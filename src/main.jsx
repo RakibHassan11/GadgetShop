@@ -19,7 +19,7 @@ import UniquePage from './Components/UniquePage/UniquePage';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />, // The root component
+    element: <Root />, // The root component, where dynamic title logic is placed
     errorElement: <ErrorPage />, // Custom error page component
     children: [
       {
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
         element: <ProductDetails />,
       },
       {
-        path:'unique',
-        element:<UniquePage></UniquePage>,
+        path: 'unique',
+        element: <UniquePage />, // Unique page component
       }
     ],
   },
