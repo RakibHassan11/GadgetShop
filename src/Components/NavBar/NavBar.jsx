@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaCartArrowDown } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
+import { FaCartArrowDown, FaHeart } from "react-icons/fa";
 
 const NavBar = () => {
   const links = (
@@ -65,11 +64,11 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-end">
-       <NavLink to="/cart" className="btn btn-ghost btn-circle">
-       <FaCartArrowDown className='text-2xl' />
+        <NavLink to="/cart" className="btn btn-ghost btn-circle">
+          <FaCartArrowDown className='text-2xl' />
         </NavLink>
         <NavLink to="/favorites" className="btn btn-ghost btn-circle">
-        <FaHeart className='text-2xl'/>
+          <FaHeart className='text-2xl' />
         </NavLink>
       </div>
     </div>
