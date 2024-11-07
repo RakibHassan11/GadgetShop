@@ -9,7 +9,7 @@ You can check out the live website here:
 
 ## Requirement Document Link
 
-[GitRepository](https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-RakibHassan11)
+[GitRepository](https://github.com/RakibHassan11/Dream-XI.git)
 
 ## React Fundamental Concepts Used
 
