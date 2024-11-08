@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTrash } from 'react-icons/fa';  // Import the trash icon for delete button
+import { FaTrash } from 'react-icons/fa';  
 
 const WishlistItems = ({ items, removeFromWishlist }) => (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

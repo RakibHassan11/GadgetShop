@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useCartContext } from '../CartContext/CartContext';  // Import CartContext
-import { useWishlistContext } from '../WishlistContext/WishlistContext'; // Import WishlistContext
-import { FaTrash } from 'react-icons/fa';  // For the remove button in Wishlist
-import { toast } from 'react-toastify'; // For showing the toast
-import { useNavigate } from 'react-router-dom'; // Import useNavigate to navigate programmatically
+import { useCartContext } from '../CartContext/CartContext';  
+import { useWishlistContext } from '../WishlistContext/WishlistContext'; 
+import { FaTrash } from 'react-icons/fa';  
+import { toast } from 'react-toastify'; 
+import { useNavigate } from 'react-router-dom'; 
 
 const DashBoard = () => {
   const { cartItems, setCartItems, totalPrice, sortCartByPrice, removeFromCart, handlePurchase, isModalOpen, closeModal } = useCartContext();
@@ -77,16 +77,20 @@ const DashBoard = () => {
           ) : (
             <div>
               {cartItems.map((item) => (
-                <div key={item.product_id} className="flex justify-between items-center p-4 border mb-4">
-                  <div>
-                    <img src={item.product_image} alt={item.product_title} className="w-20 h-20 object-cover mr-4" />
-                    <span>{item.product_title}</span>
+                <div key={item.product_id} className="flex justify-between items-center p-2 border mb-4">
+                  <div className='flex'>
+                    <img src={item.product_image} alt={item.product_title} className="rounded-lg w-40 h-30 object-cover mr-4" />
+                    <div className='mt-4'>
+                    <h1 className='font-bold text-lg'>{item.product_title}</h1>
+                    <p><span className='font-bold'>Description:</span>{item.description}</p>
+                    <p><span className='font-bold'>Price:</span>${item.price}</p>
+                    </div>
                   </div>
                   <div>
-                    <span>${item.price}</span>
+                    
                     <button
                       onClick={() => removeFromCart(item.product_id)}
-                      className="text-red-500 ml-4"
+                      className="text-red-500 ml-4 p-7 text-2xl"
                     >
                       <FaTrash />
                     </button>
@@ -107,21 +111,25 @@ const DashBoard = () => {
 
       {activeTab === 'wishlist' && (
         <div>
-          <h2 className="text-2xl font-semibold">Wishlist Items</h2>
+          <h2 className="text-2xl font-semibold mb-4">Wishlist Items</h2>
           {wishlistItems.length === 0 ? (
             <p>Your wishlist is empty.</p>
           ) : (
             <div>
               {wishlistItems.map((item) => (
-                <div key={item.product_id} className="flex justify-between items-center p-4 border mb-4">
-                  <div>
-                    <img src={item.product_image} alt={item.product_title} className="w-20 h-20 object-cover mr-4" />
-                    <span>{item.product_title}</span>
+                <div key={item.product_id} className="flex justify-between items-center p-2 border mb-4">
+                  <div className='flex'>
+                    <img src={item.product_image} alt={item.product_title} className="rounded-lg w-40 h-30 object-cover mr-4" />
+                    <div className='mt-4'>
+                    <h1 className='font-bold text-lg'>{item.product_title}</h1>
+                    <p><span className='font-bold '>Description:</span>{item.description}</p>
+                    <p><span className='font-bold'>Price:</span>${item.price}</p>
+                    </div>
                   </div>
                   <div>
                     <button
                       onClick={() => removeFromWishlist(item.product_id)}
-                      className="text-red-500 ml-4"
+                      className="text-red-500 ml-4 text-2xl p-7"
                     >
                       <FaTrash />
                     </button>

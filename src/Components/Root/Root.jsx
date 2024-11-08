@@ -27,7 +27,7 @@ const Root = () => {
         break;
     }
     document.title = title; // Update the document title dynamically
-  }, [location]); // Run this effect whenever the location changes (i.e., route changes)
+  }, [location]); // Run this effect whenever the location changes (route changes)
 
   return (
     <>

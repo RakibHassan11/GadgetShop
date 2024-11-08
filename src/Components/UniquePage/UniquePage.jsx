@@ -1,4 +1,3 @@
-// src/Components/UniquePage/UniquePage.jsx
 import React, { useState } from 'react';
 
 const UniquePage = () => {

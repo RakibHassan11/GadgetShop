@@ -1,4 +1,3 @@
-// src/Components/WishlistPage/WishlistPage.jsx
 import React from 'react';
 import { useWishlistContext } from '../WishlistContext/WishlistContext';
 import { FaTrash } from 'react-icons/fa';

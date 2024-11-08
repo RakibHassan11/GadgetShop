@@ -14,7 +14,7 @@ const Banner = () => {
                         <p className="mb-8 text-md lg:text-lg text-gray-300 whitespace-nowrap">
                             Find the perfect gadget to elevate your tech experience. From cutting-edge devices <br /> to must-have accessories, we've got you covered.
                         </p>
-                        <button className="btn bg-white px-4 py-2 text-lg lg:text-xl text-purple-600 font-medium border-none hover:bg-gray-200 rounded-3xl transition-colors">
+                        <button className="btn bg-white px-4 py-2 text-lg  text-purple-600 font-medium border-none hover:bg-gray-200 rounded-3xl transition-colors">
                             Shop Now
                         </button>
                     </div>

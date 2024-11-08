@@ -1,5 +1,3 @@
-// CartItems.js
-
 import React from 'react';
 
 const CartItems = ({ items }) => (

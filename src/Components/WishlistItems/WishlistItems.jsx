@@ -1,5 +1,3 @@
-// WishlistItems.js
-
 import React from 'react';
 
 const WishlistItems = ({ items }) => (
