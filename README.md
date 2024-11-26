@@ -56,3 +56,4 @@ Here are 5 key features of **GadgetHeaven**:
    - The navbar dynamically updates based on the route, displaying active links with special styles for the current page.
 
 
+# GadgetShop

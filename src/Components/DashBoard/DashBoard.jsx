@@ -149,7 +149,7 @@ const DashBoard = () => {
             <p>Your purchase has been successfully processed.</p>
             <button
               onClick={handleCloseModal}  // Close modal and navigate to home
-              className="mt-4 px-6 py-2 bg-purple-500 rounded-3xl text-white rounded"
+              className="mt-4 px-6 py-2 bg-purple-500 rounded-3xl text-white "
             >
               Close
             </button>
